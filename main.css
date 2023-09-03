@@ -1,0 +1,769 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* border: 0.5px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.emailpart {
+    background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emailpart p {
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+nav {
+    border: 2px solid black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 64px;
+    width: 290px;
+    margin: 130px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+nav ul li a:hover {
+    color: blue;
+    border: 2px solid red;
+    border-radius: 0% 30% 0% 30%;
+}
+
+nav ul li a {
+    padding: 10px 10px;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid transparent;
+    border-radius: 0% 30% 0% 30%;
+}
+
+nav .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    /* border: 2px solid black; */
+    margin-right: 10%;
+    /* border: 2px solid red; */
+}
+
+nav .buttons #signup {
+    font-size: 18px;
+    border: 2px solid;
+    background-color: chocolate;
+    color: white;
+    padding: 14px;
+    border-radius: 20%;
+    text-transform: capitalize;
+}
+
+nav .buttons #signin {
+    font-size: 18px;
+    border: 2px solid;
+    background-color: darkblue;
+    color: white;
+    padding: 14px;
+    border-radius: 20%;
+    text-transform: capitalize;
+}
+
+nav .buttons #signup:hover {
+    /* border: 2px solid red; */
+    border-radius: 0% 30% 0% 30%;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+nav .buttons #signin:hover {
+    /* border: 2px solid red; */
+    border-radius: 0% 30% 0% 30%;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+/* --------------------------------------nav completed----------------------------------------- */
+
+.banner {
+    background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);
+    width: 100%;
+    height: 506px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.banner .right img {
+    /* position: absolute; */
+    height: 85%;
+    /* margin-top: 500px; */
+}
+
+.banner .right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner .left {
+    width: 640px;
+    position: absolute;
+    left: 80px;
+}
+
+.banner .left p {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    /* margin-left: 70px; */
+    /* border: 3px solid yellow; */
+    /* width: 1500px;
+    height: 200px; */
+}
+
+.banner .left button {
+    font-size: 20px;
+    background-color: #f6062a;
+    padding: 15px 35px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    position: absolute;
+    top: 180px;
+    color: #fff;
+    font-family: "Lato-Black";
+    letter-spacing: 2px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+/* ---------------------------------------banner completed--------------------------------------- */
+
+.detailsection {
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.detailsection .leftdiv {
+    width: 760px;
+    height: 700px;
+    /* border: 2px solid red; */
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+
+.detailsection .leftdiv #heading {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+
+.detailsection .leftdiv #darkheading {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    font-size: 37px;
+    letter-spacing: 3px;
+}
+
+.detailsection .leftdiv .details {
+    position: absolute;
+    top: 310px;
+    left: 100px;
+    font-size: 17px;
+
+}
+
+.detailsection .leftdiv .btn {
+    position: absolute;
+    top: 410px;
+    left: 100px;
+    background: rgba(90, 17, 158, 0.883);
+    font-size: 20px;
+    padding: 15px 35px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    color: #fff;
+    font-family: "Lato-Black";
+    letter-spacing: 2px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+.detailsection .rightdiv {
+    /* border: 2px dashed black; */
+    width: 585px;
+    height: 700px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailsection .rightdiv .section1 {
+    /* border: 2px solid yellow; */
+    height: 700px;
+    width: 215px;
+    position: relative;
+}
+
+.detailsection .rightdiv .section1:hover {
+    transform: translate(20px, -30px);
+    transition: 0.9s;
+}
+
+.detailsection .rightdiv .section1 .card1 {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 215px;
+    height: 225px;
+    top: 110px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 245, 0.664);
+
+}
+
+.detailsection .rightdiv .section1 .card1 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 34px;
+    left: 30px;
+}
+
+.detailsection .rightdiv .section1 .card1 h2 {
+    font-size: 18px;
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    
+
+}
+
+.detailsection .rightdiv .section1 .card1 .carddetail {
+    position: absolute;
+    font-size: 18px;
+    top: 135px;
+    left: 5px;
+    text-align: center;
+}
+
+.detailsection .rightdiv .section1 .card2 {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 215px;
+    height: 225px;
+    top: 370px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 245, 0.664);
+
+}
+
+.detailsection .rightdiv .section1 .card2 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 34px;
+    left: 30px;
+}
+
+.detailsection .rightdiv .section1 .card2 h2 {
+    font-size: 18px;
+    position: absolute;
+    top: 105px;
+    left: 20px;
+
+}
+
+.detailsection .rightdiv .section1 .card2 .carddetail {
+    position: absolute;
+    font-size: 18px;
+    top: 135px;
+    left: 5px;
+    text-align: center;
+}
+
+/* ----------------------------section completed------------------------------------- */
+
+.detailsection .rightdiv .section2 {
+    height: 700px;
+    width: 215px;
+    position: relative;
+}
+
+.detailsection .rightdiv .section2:hover {
+    transform: translate(0px, -30px);
+    transition: 0.9s;
+}
+
+.detailsection .rightdiv .section2 .card3 {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 215px;
+    height: 225px;
+    top: 110px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 245, 0.664);
+
+}
+
+.detailsection .rightdiv .section2 .card3 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 34px;
+    left: 30px;
+}
+
+.detailsection .rightdiv .section2 .card3 h2 {
+    font-size: 18px;
+    position: absolute;
+    top: 105px;
+    left: 20px;
+
+}
+
+.detailsection .rightdiv .section2 .card3 .carddetail {
+    position: absolute;
+    font-size: 18px;
+    top: 135px;
+    left: 5px;
+    text-align: center;
+}
+
+.detailsection .rightdiv .section2 .card4 {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 215px;
+    height: 225px;
+    top: 370px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 245, 0.664);
+
+}
+
+.detailsection .rightdiv .section2 .card4 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 34px;
+    left: 30px;
+}
+
+.detailsection .rightdiv .section2 .card4 h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 105px;
+    left: 30px;
+    font-family: "Lato-Black";
+}
+
+.detailsection .rightdiv .section2 .card4 .carddetail {
+    position: absolute;
+    font-size: 18px;
+    top: 135px;
+    left: 5px;
+    text-align: center;
+}
+
+/* -----------------------------detailsection part completed------------------------------------- */
+
+.courses {
+    height: 605px;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+.courses #courseheading {
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.courses .box {
+    height: 460px;
+    /* border: 2px solid orangered; */
+    width: 1200px;
+    position: absolute;
+    top: 90px;
+    left: 74px;
+}
+
+
+.courses .box .box1 {
+    height: 180px;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: linear-gradient(#4e092f 0.2%, #83064b 70%, #4e092f 100%);
+    position: relative;
+}
+
+.courses .box .box1 .img-wrapper1 .img-wrapper2 .img-wrapper3 img {
+    height: 35px;
+    width: fit-content;
+    /* margin-left: 20px; */
+    /* border: 2px solid purple; */
+    border-radius: 50%;
+   }
+
+.courses .box .box1 .img-wrapper1 .img-wrapper2 .img-wrapper3 {
+    background: white;
+    box-shadow: 0px 0px 20px #360420;
+    /* margin-left: 80px; */
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box1 .img-wrapper1 .img-wrapper2 {
+    background: #f31d93;
+    box-shadow: 0px 0px 6px #360420;
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    /* margin-left: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box1 .img-wrapper1 {
+    height: 100px;
+    width: 100px;
+    /* min-width: 100px; */
+    /* position: relative; */
+    background: #f31d93;
+    box-shadow: 0px 0px 10px 1px #83064b;
+    border-radius: 50%;
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box1 #boxheading {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 220px;
+}
+
+.courses .box .box1 .cdata {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 105px;
+    left: 220px;
+    word-spacing: 2px;
+
+}
+
+/* <!-------- --------------------------box-1 completed-------------------------------------> */
+
+.courses .box .box-2{
+    height: 280px;
+    width: 100%;
+    /* border: 2px solid blue; */
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.courses .box .box-2 .box-3 {
+    height: 150px;
+    width: 70%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: linear-gradient(#493f3fd3 0.2%, #493f3f9f 70%, #493f3fd3 100%);
+    position: relative;
+
+}
+
+.courses .box .box-2 .box-3 .img-wrapper1 .img-wrapper2 .img-wrapper3 img {
+    height: 25px;
+    width: fit-content;
+    /* margin-left: 20px; */
+    /* border: 2px solid purple; */
+    border-radius: 50%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+
+.courses .box .box-2 .box-3 .img-wrapper1 .img-wrapper2 .img-wrapper3 {
+    background: white;
+    box-shadow: 0px 0px 20px #360420;
+    /* margin-left: 80px; */
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-3 .img-wrapper1 .img-wrapper2 {
+    background: #8b26269f;
+    box-shadow: 0px 0px 4px #360420;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    /* margin-left: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-3 .img-wrapper1 {
+    height: 80px;
+    width: 80px;
+    /* min-width: 100px; */
+    /* position: relative; */
+    background: #8875759f;
+    box-shadow: 0px 0px 10px 1px #83064b;
+    border-radius: 50%;
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-3 #boxheading {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 37px;
+    left: 220px;
+}
+
+.courses .box .box-2 .box-3 .cdata {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 220px;
+    word-spacing: 2px;
+
+}
+
+/* -----------------------------------------box-3 completed----------------------------------------- */
+
+                /* ---------------box-4 start here --------------- */
+
+.courses .box .box-2 .box-4 {
+    height: 130px;
+    width: 70%;
+    /* border: 2px solid black; */
+    box-shadow: #f6062a;
+    display: flex; 
+    justify-content: flex-start; 
+}
+
+.courses .box .box-2 .box-4 .box-5 {
+    height: 130px;
+    width: 50%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: linear-gradient(90deg, #4b2929e7 20%, #634e4ebd 100%);
+    position: relative;
+}
+
+
+.courses .box .box-2 .box-4 .box-5 #boxheading {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 44px;
+}
+
+.courses .box .box-2 .box-4 .box-5 .cdata {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 44px;
+    word-spacing: 2px;
+}
+
+               /* ---------------------------box-5 completed--------------------------- */
+
+.courses .box .box-2 .box-4 .box-6 {
+    height: 130px;
+    width: 50%;
+    /* border: 2px solid blue; */
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-between; */
+    background: linear-gradient(90deg, rgb(135, 148, 15) 25%, rgba(156, 154, 15, 0.705) 100%);
+    position: relative;
+
+}
+
+.courses .box .box-2 .box-4 .box-6 #boxheading {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 44px;
+}
+
+.courses .box .box-2 .box-4 .box-6 .cdata {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 44px;
+    word-spacing: 2px;
+}
+
+                   /*-----------------box-6 completed---------------------- */
+
+/*---------------------------------------box-4 completed-------------------------------------- */
+
+                     /*-----------------box-7 start here ---------------------- */
+
+.courses .box .box-2 .box-7 {
+    height: 280px;
+    width: 30%;
+    /* border: 2px solid black; */
+    /* box-shadow: #f6062a; */
+    position: absolute;
+    right:0px;
+    top:0px;
+    background: rgb(243, 223, 223);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-7 .img-wrapper1 .img-wrapper2 .img-wrapper3 img {
+    height: 25px;
+    /* width: fit-content; */
+    /* margin-left: 20px; */
+    /* border: 2px solid purple; */
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+
+.courses .box .box-2 .box-7 .img-wrapper1 .img-wrapper2 .img-wrapper3 {
+    background: white;
+     box-shadow: 0px 0px 2px #360420;
+    /* margin-left: 80px; */
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-7 .img-wrapper1 .img-wrapper2 {
+    background: #8b26269f;
+    box-shadow: 0px 0px 2px #360420;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    /* margin-left: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-7 .img-wrapper1 {
+    height: 80px;
+    width: 80px;
+    /* min-width: 100px; */
+    /* position: relative; */
+    background: #8875759f;
+    box-shadow: 0px 0px 10px 1px #83064b;
+    border-radius: 50%;
+    /* margin: 80px; */
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .box .box-2 .box-7 #boxheading {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 160px;
+    left: 148px;
+}
+
+.courses .box .box-2 .box-7 .cdata {
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    top: 200px;
+    /* left: 44px; */
+    word-spacing: 2px;
+    text-align: center ;
+}
+
+                   /*-----------------box-7 completed---------------------- */
+
+.footer .web-footer {
+         background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);
+         height:50px;
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+}
+
+.footer .web-footer #copyright{
+    padding: 0px 30px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.footer .web-footer #designed{
+    padding: 0px 30px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.footer .web-footer #designed span{
+    font-size: 25px;
+    font-style: italic;
+    color: yellow;
+    letter-spacing: 2px;
+    font-family: "Lobster";
+}
